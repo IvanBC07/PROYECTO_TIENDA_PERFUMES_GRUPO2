@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="estilo_inicio_sesion.css" />
+</head>
+<body>
+
+  <header>
+        <h1 id="TITULO">PERFUME COMPANY</h1>
+        <h2>
+          Tu esencia, tu estilo. Perfumes que inspiran.
+        </h2>
+        <div class="navegador">
+            <nav>
+        
+        <ul>
+            <li>
+                <a href="indext.html">Inicio</a>
+            </li>
+            <li>
+                <a href="productos.html">Productos</a>
+            </li>
+            <li>
+                <a href="iniciosesion.html">Iniciar Sesion</a>
+            </li>
+        </ul>
+       
+        
+    </nav>
+        </div>
+        
+    </header>
+
+  <main class="container">
+    <section class="card" aria-labelledby="login-title">
+      <h1 id="login-title" class="title">Iniciar sesión</h1>
+
+      <form class="login-form" action="/login" method="POST" autocomplete="on" novalidate>
+        <!-- Email -->
+        <label class="field">
+          <span class="label-text">Correo electrónico</span>
+          <input
+            type="email"
+            name="email"
+            inputmode="email"
+            placeholder="tucorreo@ejemplo.com"
+            required
+          />
+        </label>
+
+        <!-- Password -->
+        <label class="field">
+          <span class="label-text">Contraseña</span>
+          <div class="password-wrapper">
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="contraseña"
+              required
+              minlength="8"
+            />
+          </div>
+          <small class="hint">Mínimo 8 caracteres</small>
+        </label>
+
+        <button type="submit" class="btn">Entrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Autor:</strong> Marcos, Iván, Álvaro, Diego</p>
+    <p><strong>Dirección:</strong> Madrid Centro</p>
+    <p><strong>Teléfono:</strong> 684 84 75 93</p>
+  </footer>
+
+</body>
+</html>
