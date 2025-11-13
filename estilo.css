@@ -1,0 +1,105 @@
+/* ---------- Estilos generales ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Contenedor principal ---------- */
+.container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- Título ---------- */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ---------- Formulario ---------- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiquetas e inputs */
+label {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* ---------- Recuérdame ---------- */
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #333;
+  justify-content: flex-start; /* Alineado a la izquierda */
+}
+
+.checkbox-field input {
+  width: 16px;
+  height: 16px;
+}
+
+/* ---------- Botón ---------- */
+.btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #357ab8;
+}
+
+/* ---------- Adaptable a móviles ---------- */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}
