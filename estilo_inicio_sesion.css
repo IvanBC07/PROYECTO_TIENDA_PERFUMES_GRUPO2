@@ -238,7 +238,19 @@ body {
 
        main{
         background-color:#FFE4E1 ;
-        height: 43vh;
+        height: 58vh;
+       }
+
+       button{
+        background-color: #880e4f;
+        color: white;
+        height: 6vh;
+        width: 20vh;
+       }
+
+       button:hover{
+        background-color: #5F9EA0;
+        cursor: pointer;
        }
        
 
