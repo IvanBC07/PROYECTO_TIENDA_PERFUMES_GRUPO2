@@ -94,12 +94,4 @@ input[type="password"]:focus {
 }
 
 /* ---------- Adaptable a móviles ---------- */
-@media (max-width: 480px) {
-  .container {
-    padding: 20px;
-  }
 
-  .title {
-    font-size: 18px;
-  }
-}
